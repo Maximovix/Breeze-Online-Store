@@ -1221,11 +1221,12 @@ body.lock {
   }
 
   .footer__title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.3rem;
   }
 
   .footer__text {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1272,13 +1273,13 @@ body.lock {
 
   .footer__item {
     width: 70%;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 650px) {
   .component,
-  .product,
-  .description {
+  .product {
     margin-bottom: 5rem;
   }
 
@@ -1310,6 +1311,10 @@ body.lock {
 
   .description__text {
     font-size: 2rem;
+  }
+
+  .description {
+    margin-bottom: 6.5rem;
   }
 }
 
@@ -1390,17 +1395,14 @@ body.lock {
             transform: translate(-50%, 0);
   }
 
-  .intro__title {
-    font-size: 2rem;
-  }
-
-  .intro__text {
-    font-size: 1.2rem;
-  }
-
   .product__item {
     margin: 0 1.5rem;
     padding-top: 1rem;
+  }
+
+  .product__text,
+  .product__image {
+    margin-bottom: 0;
   }
 }
 
@@ -1412,11 +1414,20 @@ body.lock {
   .component__item {
     width: 80%;
   }
+
+  .component__title {
+    font-size: 2rem;
+  }
+
+  .component__text,
+  .component__news {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 550px) {
   .product__item {
-    margin: 0 7rem;
+    margin: 0 13rem;
     padding-top: 2rem;
   }
 }
@@ -1455,12 +1466,44 @@ body.lock {
     background-color: #78c4cd;
     color: #777777;
   }
+
+  .intro {
+    margin-bottom: 5rem;
+  }
+
+  .intro__inner {
+    min-height: 100vh;
+  }
+
+  .image__intro {
+    height: 100vh;
+  }
+
+  .product__item {
+    margin: 0 10rem;
+  }
+
+  .intro__slider {
+    min-height: 100vh;
+  }
+
+  .intro__slider .slick-list,
+  .intro__slider .slick-track,
+  .intro__slider .slider__image {
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 500px) {
   .description__item {
     width: 100%;
     padding: 1.6rem 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product__item {
+    margin: 0 6rem;
   }
 }
 
@@ -1476,12 +1519,7 @@ body.lock {
 
 @media (max-width: 440px) {
   .intro__title {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
-  }
-
-  .intro__text {
-    font-size: .9rem;
   }
 }
 
@@ -1493,12 +1531,20 @@ body.lock {
   .description__text {
     font-size: 1.6rem;
   }
+
+  .product__item {
+    margin: 0 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .product__title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 400px) {
   .component,
-  .product,
-  .description {
+  .product {
     margin-bottom: 4rem;
   }
 
@@ -1518,15 +1564,6 @@ body.lock {
 
   .btn__header:first-child {
     margin-right: 1.5rem;
-  }
-
-  .product__item {
-    margin: 0 3rem;
-    padding-top: 1.5rem;
-  }
-
-  .product__title {
-    font-size: 2rem;
   }
 
   .footer__inner {

@@ -43,7 +43,7 @@ $(function() {
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 551,
 				settings: {
 					slidesToShow: 1,
 				}
@@ -85,10 +85,13 @@ $(function() {
 		let blockID = $(this).data('scroll'),
 			blockOffset = $(blockID).offset().top;
 
-		console.log(blockOffset);
+			if (blockID !== '#home') {
+				blockOffset = blockOffset - 100;
+			}
+
 
 		$('body,html').animate({
-			scrollTop: blockOffset - 100
+			scrollTop: blockOffset
 		}, 700);
 	});
 
